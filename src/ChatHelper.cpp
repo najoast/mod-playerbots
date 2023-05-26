@@ -259,8 +259,8 @@ ItemIds ChatHelper::parseItems(std::string const text)
     uint8 pos = 0;
     while (true)
     {
-        uint32 i = text.find("Hitem:", pos);
-        if (i == -1)
+        size_t i = text.find("Hitem:", pos);
+        if (i == std::string::npos)
             break;
 
         pos = i + 6;

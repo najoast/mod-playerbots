@@ -82,7 +82,7 @@ class WorldPosition : public WorldLocation
         //Constructors
         WorldPosition() : WorldLocation() { };
         WorldPosition(WorldLocation const& loc) : WorldLocation(loc) { }
-        WorldPosition(WorldPosition const& pos) : WorldLocation(pos), visitors(pos.visitors) { }
+        // WorldPosition(WorldPosition const& pos) : WorldLocation(pos), visitors(pos.visitors) { }
         WorldPosition(std::string const str);
         WorldPosition(uint32 mapid, float x, float y, float z = 0.f, float orientation = 0.f) : WorldLocation(mapid, x, y, z, orientation) { }
         WorldPosition(uint32 mapId, const Position& pos);
